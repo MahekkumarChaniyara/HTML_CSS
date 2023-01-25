@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.fixed{
+          
+            position:fixed;
+            border:1px solid red;
+            width:300px;
+            bottom:0;
+            right:0;
+            background: #000;
+            color:white;
+            animation-name:top;
+
+        }
+        @keyframes top {
+               
+        }
+    </style>
+</head>
+<body>
+    <p id="top">List</p>
+    <p>ordered list</p>
+    <ol>
+        <li>Book</li>
+        <li>Shop</li>
+        <li>Items</li>
+    </ol>
+    <br>
+    <p>unordered list</p>
+    <ul>
+        <li>Book</li>
+        <li>Shop</li>
+        <li>Items</li>
+    </ul>
+    <br>
+    <p>defination list</p>
+    <dl>
+        <dt>Book</dt>
+        <dd>this is a book.</dd>
+        <dt>Html and CSS</dt>
+        <dd>Html and CSS is use for making website.</dd>
+    </dl>
+    <hr/>
+    <p>linking specific parts of the same page</p>
+    <ul>
+        <li><a href="#service">service</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#top">top</a></li>
+    </ul>
+    <p id="service" style="width:400px">Service <br/>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem quas delectus aut nemo culpa, fugit ipsum veritatis temporibus doloribus alias a debitis maiores dolor iusto exercitationem commodi omnis eveniet!
+    Architecto nulla tempore maiores natus reiciendis consectetur et alias facilis quisquam, fugit voluptate vero odit nam dignissimos corporis similique, eius autem? Possimus assumenda nobis beatae corrupti quisquam aliquam harum eligendi.
+    At eum nulla dicta, illum architecto alias repudiandae autem possimus eligendi atque asperiores ipsum cumque commodi iure mollitia magnam maiores! Nam vero, nihil dolores commodi aliquid amet explicabo at nisi!
+    Voluptatem dicta voluptatibus suscipit eius! Cumque nam pariatur voluptatem sint delectus quis quidem quo culpa labore praesentium vitae temporibus, quia iste tempora nihil repellendus eos, sequi laborum, sapiente ratione ullam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus eos explicabo voluptatibus quia nostrum. Voluptatibus vero optio voluptatem natus, placeat repellendus enim fuga consectetur officia amet, laboriosam illo. Placeat.
+    </p>
+    <p id="team">Team<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, officia? Iure harum laborum, veritatis tempore, eaque sunt ullam doloribus reprehenderit earum sapiente inventore obcaecati. Harum et eveniet libero voluptate repellendus.
+    </p>
+    </body>
+    <figuer>
+    <img src="../assignment-1/HTML-CSS/HTML-CSS/Assets/table-2.jpg" ></img>
+    <figcaption style="text-align:center">Demo Image</figcaption>
+    <br>
+    <hr/>
+    <p><b>table</b></p>
+    <table border="2px" bgcolor="lightgray">
+        <tr>
+            <th></th>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+            <th>col4</th>
+        </tr>
+        <tr>
+            <th>row1</th>
+            <td colspan="2" bgcolor="white">value1</td>
+          
+            <td rowspan="2" bgcolor="lightpink">value1</td>
+            <td>value2</td>
+        </tr>
+        </tr>
+        <tr>
+            <th>row2</th>
+            <td>value3</td>
+            <td>value4</td>
+            <td colspan="2" bgcolor="yellow">value3</td>
+        </tr>
+    </table>
+    <hr/>
+    <p><b>Form<b></p>
+        <form>
+        <fieldset><legend> Information </legend>
+        <label>username:<input type="text"></input></label>
+        <p>password : <input type="password"></p> 
+        <p>Gender:<input type="radio" name="sameallradio" value="male" id="m" checked><label for="m">Male</label>
+            <input type="radio" name="sameallradio" value="female" id="fem"><label for="fem">Female</label>
+            <input type="radio" name="sameallradio" value="other" id="oth"><label for="oth">Other</label>
+        </p>
+        <p>What is your favrite GAME :
+            <input type="checkbox" name="checked" value="badminton">BADMINTON</input>
+            <input type="checkbox" name="checked" value="cricket">CRICKET</input>
+            <input type="checkbox" name="checked" value="hockey">HOCKEY</input>
+        </p>
+        <p>What is your Favrite Color?
+        <select name="sendtoserver" size="3 " multiple>
+            <option value="pink">Pink</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="white" selected>White</option>
+        </select>
+    </fieldset>
+    BirthDate<input type="date" value="dateonly"></input>
+        <input type="file" value="file"></input>
+        <input type="submit" name="submit" value='submit here'></input>
+        <iframe src="https://www.google.co.uk/maps/@23.0235063,72.5323024,15z" width="500px" height="300px" frameborder="2"></iframe>
+    </form>
+    </hr>
+    <div class="fixed">
+    TopBack
+    </div>
+</html>
